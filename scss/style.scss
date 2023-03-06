@@ -168,4 +168,95 @@
 .but1:hover span {
     transform: rotate(180deg);
 }
-
+@mixin number-conf{
+    font-size: 50px;
+    font-weight: 600;
+}
+@mixin text-conf{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+}
+h2{
+    font-weight: 700;
+    font-size: 70px;
+}
+.first-half{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    
+    .after-header{
+        max-width: 840px;
+        text-align: center;
+    }
+    .statistics{
+        display: flex;
+        max-width: fit-content;
+        gap: 110px;
+        margin-top: 50px;
+        
+        .stats-item{
+            max-width: 110px;
+            text-align: center;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span{
+                white-space: nowrap;
+                @include text-conf()
+            }
+            .number{
+                @include number-conf()
+            }
+        }
+    }
+   
+}
+.usage-variety{
+    display: flex;
+    gap: 80px;
+    margin: 260px auto;
+    max-width: fit-content;
+    align-items: center;
+    .usage-text{
+        max-width: 700px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .paragraph{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 465px;
+        }
+        button{
+            background: 0;
+            border: 1px solid #B8884B;
+            padding: 15px 30px 15px 30px;
+            color: #B8884B;
+        }
+    }
+    .usage-images{
+        display: flex;
+        gap: 40px;
+        .img-item{
+            position: relative;
+            button{
+                position: absolute;
+                border: 0;
+                background: rgba(241, 245, 248, 0.8);
+                backdrop-filter: blur(15px);
+                bottom: 20px;
+                left: 50%;
+                translate: -50% 0;
+                width: 180px;
+                height: 50px;
+            }
+        }
+    }
+}
