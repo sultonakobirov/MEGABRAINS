@@ -209,21 +209,20 @@ h2{
         max-width: fit-content;
         gap: 110px;
         margin-top: 50px;
-        
-        .stats-item{
-            max-width: 110px;
-            text-align: center;
-            margin: 30px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            span{
-                white-space: nowrap;
-                @include text-conf()
-            }
-            .number{
-                @include number-conf()
-            }
+    }
+    .stats-item{
+        max-width: 110px;
+        text-align: center;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span{
+            white-space: nowrap;
+            @include text-conf()
+        }
+        .number{
+            @include number-conf()
         }
     }
    
@@ -256,19 +255,20 @@ h2{
     .usage-images{
         display: flex;
         gap: 40px;
-        .img-item{
-            position: relative;
-            button{
-                position: absolute;
-                border: 0;
-                background: rgba(241, 245, 248, 0.8);
-                backdrop-filter: blur(15px);
-                bottom: 20px;
-                left: 50%;
-                translate: -50% 0;
-                width: 180px;
-                height: 50px;
-            }
+       
+    }
+    .img-item{
+        position: relative;
+        button{
+            position: absolute;
+            border: 0;
+            background: rgba(241, 245, 248, 0.7);
+            backdrop-filter: blur(15px);
+            bottom: 20px;
+            left: 50%;
+            translate: -50% 0;
+            width: 180px;
+            height: 50px;
         }
     }
 }
