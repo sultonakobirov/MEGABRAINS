@@ -125,8 +125,9 @@
 }
 
 .containera {
+  margin: 100px auto;
   display: flex;
-  gap: 80px;
+  gap: 120px;
   justify-content: center;
 }
 
