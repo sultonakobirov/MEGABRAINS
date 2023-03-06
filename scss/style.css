@@ -162,6 +162,14 @@
   transform: rotate(180deg);
 }
 
+@media (max-width: 2560px) {
+  .head {
+    width: 2560px;
+  }
+  .bigbox {
+    width: 2560px;
+  }
+}
 @media (max-width: 1440px) {
   head {
     width: 1440px;
