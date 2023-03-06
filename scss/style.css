@@ -137,15 +137,14 @@
 .but1:hover span {
   transform: rotate(180deg); }
 
-h2 {
-  font-weight: 700;
-  font-size: 70px; }
-
 .first-half {
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: center; }
+  .first-half h2 {
+    font-weight: 700;
+    font-size: 70px; }
   .first-half .after-header {
     max-width: 840px;
     text-align: center; }
