@@ -102,4 +102,62 @@
 .elem5 {
   grid-column: 3/5;
   grid-row: 3/5;
+}
+
+.itema {
+  background-image: url(../img/image\ 1.jpg);
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.itemb {
+  background-image: url(../img/image\ 2.jpg);
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.containera {
+  margin: 100px auto;
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+}
+
+.whitebox {
+  width: 530px;
+  height: 60px;
+  background-color: white;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.but1 {
+  width: 40px;
+  height: 50px;
+  border: rgb(186, 175, 175) solid 2px;
+  position: absolute;
+  right: 15px;
+  background-color: white;
+  opacity: 0.8;
+  color: #252D35;
+}
+
+.but1 span {
+  transition: 0.5s ease;
+}
+
+.but1:hover span {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */
