@@ -214,7 +214,7 @@
     &:hover {
         border-color: #B8884B;
         transform: translateY(-4px);
-        color: white;
+        color: white; 
 
         .fill-container {
             transform: translateY(-50%) rotate(0);
@@ -305,7 +305,7 @@
             background: 0;
             border: 1px solid #B8884B;
             padding: 15px 30px 15px 30px;
-            color: #B8884B;
+
         }
     }
     .usage-images{
@@ -328,3 +328,6 @@
         }
     }
 }
+
+
+
