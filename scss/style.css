@@ -162,6 +162,11 @@
   transform: rotate(180deg);
 }
 
+
+h2 {
+  font-weight: 700;
+  font-size: 70px;
+
 .button {
   position: relative;
   padding: 24px 64px;
@@ -209,6 +214,7 @@
 }
 .button:hover .fill-container::after {
   transform: translateY(0);
+
 }
 
 .first-half {
@@ -217,22 +223,32 @@
   gap: 40px;
   align-items: center;
 }
+
 .first-half h2 {
   font-weight: 700;
   font-size: 70px;
 }
+
 .first-half .after-header {
   max-width: 840px;
   text-align: center;
 }
 .first-half .statistics {
   display: flex;
+
+  max-width: -webkit-fit-content;
+
+
   max-width: -moz-fit-content;
   max-width: fit-content;
   gap: 110px;
   margin-top: 50px;
 }
+
+.first-half .statistics .stats-item {
+
 .first-half .stats-item {
+
   max-width: 110px;
   text-align: center;
   margin: 30px auto;
@@ -240,14 +256,22 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.first-half .statistics .stats-item span {
+
 .first-half .stats-item span {
+
   white-space: nowrap;
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
 }
+
+.first-half .statistics .stats-item .number {
+
 .first-half .stats-item .number {
+
   font-size: 50px;
   font-weight: 600;
 }
@@ -256,12 +280,18 @@
   display: flex;
   gap: 80px;
   margin: 260px auto;
+
+  max-width: -webkit-fit-content;
+
   max-width: -moz-fit-content;
   max-width: fit-content;
   align-items: center;
 }
 .usage-variety .usage-text {
   max-width: 700px;
+
+  height: -webkit-fit-content;
+
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -278,11 +308,23 @@
   background: 0;
   border: 1px solid #B8884B;
   padding: 15px 30px 15px 30px;
+
+  color: #B8884B;
+
+
 }
 .usage-variety .usage-images {
   display: flex;
   gap: 40px;
 }
+
+.usage-variety .usage-images .img-item {
+  position: relative;
+}
+.usage-variety .usage-images .img-item button {
+  position: absolute;
+  border: 0;
+  background: rgba(241, 245, 248, 0.8);
 .usage-variety .img-item {
   position: relative;
 }
@@ -297,4 +339,27 @@
   translate: -50% 0;
   width: 180px;
   height: 50px;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .ssilka {
+    display: none;
+    width: 0;
+    overflow: hidden;
+  }
+  .first-half h2 {
+    text-align: center;
+  }
+  .first-half .statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+  .usage-variety .img-hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
 }/*# sourceMappingURL=style.css.map */

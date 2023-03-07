@@ -16,7 +16,9 @@
     max-width: 2500px;
     margin: 0 auto;
     padding-top: 20px;
+    
 }
+
 
 .img1 {
     margin-right: 50px;
@@ -170,6 +172,7 @@
 }
 
 
+
 .button {
     position: relative;
     padding: 24px 64px;
@@ -225,6 +228,7 @@
         }
     }
 }
+
 
 
 
@@ -330,4 +334,32 @@
 }
 
 
+
+@media  screen and (max-width: 1200px) {
+   
+    .ssilka{
+        display: none;
+        width: 0;
+        overflow: hidden;
+    }
+   .first-half{
+    h2{
+        text-align: center;
+       
+    }
+    .statistics{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        
+    }
+   }
+   .usage-variety{
+    .img-hidden{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+}
 
